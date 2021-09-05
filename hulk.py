@@ -128,7 +128,7 @@ class MonitorThread(threading.Thread):
 				print "%d Requests Sent" % (request_counter)
 				previous=request_counter
 		if flag==2:
-			print "\n-- OpNestle has Started --"
+			print ("\n-- OpNestle has Started --")
 
 #execute 
 if len(sys.argv) < 2:
@@ -139,7 +139,7 @@ else:
 		usage()
 		sys.exit()
 	else:
-		print "-- Attack has Started HA HA HA HA --"
+		print ("-- Attack has Started HA HA HA HA --")
 		if len(sys.argv)== 3:
 			if sys.argv[2]=="safe":
 				set_safe()
